@@ -1,0 +1,53 @@
+=== Guild Info for PK clan 3100324123 ===
+clan_id (id): 3100324123
+clan_name (special_code): Mʏ_Pʀɪᴍᴇ㋛︎
+created_at (timestamp1): 1782557839
+updated_at (timestamp2): 0
+last_active: 1782661727
+level (rank): 1
+region: PK
+welcome_message: Come on What'sapp!!!!!
+score: 0
+xp: 202627
+status_code: 1
+error_code: 1001
+big_numbers: []
+balance: 550100
+energy: 0
+flags: 2
+level field: 0
+version: 1
+value_a: 3311847805
+sub_type: 20
+
+=== Guild Details ===
+region: 
+clan_id: 0
+members_online: 0
+total_members: 0
+regional: 0
+reward_time: 0
+expire_time: 0
+
+=== MessageToDict Output ===
+{
+  "id": 3100324123,
+  "special_code": "M\u028f_P\u0280\u026a\u1d0d\u1d07\u32db\ufe0e",
+  "timestamp1": 1782557839,
+  "value_a": 3311847805,
+  "status_code": 1,
+  "sub_type": 20,
+  "version": 1,
+  "flags": 2,
+  "welcome_message": "Come on What'sapp!!!!!",
+  "region": "PK",
+  "json_metadata": "{\"tags\": [3, 6, 12]}",
+  "big_numbers": "[]",
+  "balance": 550100,
+  "upgrades": 10,
+  "rank": 1,
+  "xp": 202627,
+  "error_code": 1001,
+  "last_active": 1782661727,
+  "guild_details": {}
+}

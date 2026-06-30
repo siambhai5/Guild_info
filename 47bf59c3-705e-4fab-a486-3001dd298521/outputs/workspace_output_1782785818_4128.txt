@@ -1,0 +1,11 @@
+PK Account: uid=4700657512, password=E464DF2CA2733A3BE4E4...
+[oauth/guest/token/grant] Response(raw): b'{"refresh_expiry_time": 1785377820, "expiry_time": 1784081820, "uid": 4700657512, "open_id": "6c3bc845eb10ab8405c74bb9c8b702e2", "access_token": "9a4668cdca60b48d7442ea0c1c1fb0a6274cc968f710a7b6e034a86dbb02782b", "main_active_platform": 4, "expires_in": 1296000, "token_type": "Bearer", "platform": 4, "create_time": 1782785820, "scope": ["get_user_info", "get_friends", "payment", "send_request"], "refresh_token": "9e3df4ca0c82e11380db4f6a872fb2af427d4c1938faa8d163b5472ed8c9fa9f"}' 
+
+Auth response keys: ['refresh_expiry_time', 'expiry_time', 'uid', 'open_id', 'access_token', 'main_active_platform', 'expires_in', 'token_type', 'platform', 'create_time', 'scope', 'refresh_token']
+[MajorLogin] Response(raw): b'<html><body><h1>503 Service Unavailable</h1>\nNo server is available to handle this request.\n</body></html>\n' 
+
+[MajorLogin] Error: <html><body><h1>503 Service Unavailable</h1>
+No server is available to handle this request.
+</body></html>
+
+Login response: None

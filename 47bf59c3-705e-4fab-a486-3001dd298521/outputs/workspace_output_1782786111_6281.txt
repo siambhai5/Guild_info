@@ -1,0 +1,105 @@
+Account.py
+InGame.py
+__pycache__
+=== /tmp/FreeFire-Api/Api/Account.py ===
+import requests
+import Proto.compiled.MajorLogin_pb2
+from Utilities.until import encode_protobuf, decode_protobuf
+import json
+from Configuration.APIConfiguration import RELEASEVERSION, DEBUG
+
+
+def get_garena_token(uid, password):
+    """
+    Get Garena token using uid and password
+    
+    Args:
+        uid (str): User ID
+        password (str): Password
+    
+    Returns:
+        dict: JSON response from the API
+    """
+    url = "https://ffmconnect.live.gop.garenanow.com/oauth/guest/token/grant"
+
+    payload = {
+        'uid': uid,
+        'password': password,
+        'response_type': "token",
+        'client_type': "2",
+        'client_secret': "2ee44819e9b4598845141067b281621874d0d5d7af9d8f7e00c1e54715b7d1e3",
+        'client_id': "100067"
+    }
+
+    headers = {
+        'User-Agent': "GarenaMSDK/4.0.19P9(A063 ;Android 13;en;IN;)",
+        'Connection': "Keep-Alive",
+        'Accept-Encoding': "gzip"
+    }
+
+    try:
+        response = requests.post(url, data=payload, headers=headers)
+        response.raise_for_status()
+        if DEBUG:
+            print("[oauth/guest/token/grant] Response(raw):", response.content, "\n")
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        print(f"Error making request: {e}")
+        return None
+    except json.JSONDecodeError as e:
+        print(f"Error parsing JSON response: {e}")
+        return None
+
+
+
+=== /tmp/FreeFire-Api/Api/InGame.py ===
+import requests
+import Proto.compiled.PlayerPersonalShow_pb2
+import Proto.compiled.PlayerStats_pb2
+import Proto.compiled.PlayerCSStats_pb2
+import Proto.compiled.SearchAccountByName_pb2
+from Utilities.until import encode_protobuf, decode_protobuf
+import json
+from Configuration.APIConfiguration import RELEASEVERSION, DEBUG
+
+
+
+def search_account_by_keyword(server_url, auth_token, keyword):
+    """
+    Perform a fuzzy account search by keyword.
+
+    Args:
+        server_url (str): Base URL of the API server.
+        auth_token (str): Bearer token used for authentication.
+        keyword (str): Search term to match player names.
+
+    Returns:
+        dict: Parsed JSON response containing matching accounts.
+
+    Raises:
+        ConnectionError: If network connection fails or times out.
+        ValueError: If protobuf encoding or decoding fails.
+        RuntimeError: For invalid or empty API responses.
+    """
+    try:
+        # --- Endpoint & Payload ---
+        endpoint = f"{server_url}/FuzzySearchAccountByName"
+        try:
+            payload = encode_protobuf(
+                {"keyword": str(keyword)},
+                Proto.compiled.SearchAccountByName_pb2.request()
+            )
+        except Exception as e:
+            raise ValueError(f"Failed to encode protobuf payload: {e}")
+
+        # --- Request Headers ---
+        headers = {
+            "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 13; A063 Build/TKQ1.221220.001)",
+            "Connection": "Keep-Alive",
+            "Accept-Encoding": "gzip",
+            "Expect": "100-continue",
+            "Authorization": f"Bearer {auth_token}",
+            "X-Unity-Version": "2018.4.11f1",
+            "X-GA": "v1 1",
+            "ReleaseVersion": RELEASEVERSION,
+            "Content-Type": "application/x-www-form-urlencoded",

@@ -1,0 +1,1 @@
+bash: line 2: kill: (2500) - No such process

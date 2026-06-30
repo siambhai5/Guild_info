@@ -1,0 +1,19 @@
+Got JWT token: eyJhbGciOiJIUzI1NiIsInN2ciI6IjMiLCJ0eXAiOiJKV1QifQ...
+
+BD endpoint (clientbp.ggpolarbear.com): Status=401
+Response: signature is invalid
+
+
+IND endpoint: Status=400
+Response: NF_CLAN_CLAN_NOT_FOUND
+
+
+loginbp.ggpolarbear.com: Status=500
+Response: 
+
+
+loginbp.ggblueshark.com: Status=500
+Response: 
+
+
+clientbp.ggblueshark.com: ERROR - [Errno -2] Name or service not known

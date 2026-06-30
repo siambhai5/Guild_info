@@ -1,0 +1,55 @@
+
+=== Testing BD ===
+[oauth/guest/token/grant] Response(raw): b'{"refresh_expiry_time": 1785377828, "expiry_time": 1784081828, "uid": 4700657632, "open_id": "01e709b44f7fc390eb81a292c7157b9b", "access_token": "c57bbdf2983e0a37c55ebfddc8a0a24192ce9e92839dd8edd19307fc6ce56a84", "main_active_platform": 4, "expires_in": 1296000, "token_type": "Bearer", "platform": 4, "create_time": 1782785828, "scope": ["get_user_info", "get_friends", "payment", "send_request"], "refresh_token": "1fe701a8f88934bca363d8eb45f36b3336e88a3e2bd8b18a077d1069f1931889"}' 
+
+[MajorLogin] Response(raw): b'<html><body><h1>503 Service Unavailable</h1>\nNo server is available to handle this request.\n</body></html>\n' 
+
+[MajorLogin] Error: <html><body><h1>503 Service Unavailable</h1>
+No server is available to handle this request.
+</body></html>
+
+Major login failed
+
+=== Testing IND ===
+[oauth/guest/token/grant] Response(raw): b'{"refresh_expiry_time": 1785377830, "expiry_time": 1784081830, "uid": 4700657236, "open_id": "52fed4978cb6b49b187b67688ee3720d", "access_token": "1ce3d12c0517e69772b333d931f423e1881f98ad9b811ad44031c1b218c7977d", "main_active_platform": 4, "expires_in": 1296000, "token_type": "Bearer", "platform": 4, "create_time": 1782785830, "scope": ["get_user_info", "get_friends", "payment", "send_request"], "refresh_token": "b2aaca9822f49f9c0daacadb0eaa01411198af94d390252d37f334a49dc3bf31"}' 
+
+[MajorLogin] Response(raw): b'<html><body><h1>503 Service Unavailable</h1>\nNo server is available to handle this request.\n</body></html>\n' 
+
+[MajorLogin] Error: <html><body><h1>503 Service Unavailable</h1>
+No server is available to handle this request.
+</body></html>
+
+Major login failed
+
+=== Testing PK ===
+[oauth/guest/token/grant] Response(raw): b'{"refresh_expiry_time": 1785377831, "expiry_time": 1784081831, "uid": 4700657512, "open_id": "6c3bc845eb10ab8405c74bb9c8b702e2", "access_token": "9a4668cdca60b48d7442ea0c1c1fb0a691eda95350e66cc5a6c1e56564b27880", "main_active_platform": 4, "expires_in": 1296000, "token_type": "Bearer", "platform": 4, "create_time": 1782785831, "scope": ["get_user_info", "get_friends", "payment", "send_request"], "refresh_token": "9e3df4ca0c82e11380db4f6a872fb2afd879b232ee26660340d6e1ae23458e6d"}' 
+
+[MajorLogin] Response(raw): b'<html><body><h1>503 Service Unavailable</h1>\nNo server is available to handle this request.\n</body></html>\n' 
+
+[MajorLogin] Error: <html><body><h1>503 Service Unavailable</h1>
+No server is available to handle this request.
+</body></html>
+
+Major login failed
+
+=== Testing SG ===
+[oauth/guest/token/grant] Response(raw): b'{"refresh_expiry_time": 1785377833, "expiry_time": 1784081833, "uid": 4700657292, "open_id": "ed66a603c6de30a2c4ae0ce832a8db26", "access_token": "c7c9981644a5e8c70377dbbf4cbed85cd6f9cfe4bed7a9fe8f1f4b98c4b7b28d", "main_active_platform": 4, "expires_in": 1296000, "token_type": "Bearer", "platform": 4, "create_time": 1782785833, "scope": ["get_user_info", "get_friends", "payment", "send_request"], "refresh_token": "b1bc9ef0b572b364807cd17e190c6360037379c5e2e427e4dfe2ef3e7fc14802"}' 
+
+[MajorLogin] Response(raw): b'<html><body><h1>503 Service Unavailable</h1>\nNo server is available to handle this request.\n</body></html>\n' 
+
+[MajorLogin] Error: <html><body><h1>503 Service Unavailable</h1>
+No server is available to handle this request.
+</body></html>
+
+Major login failed
+
+=== Testing ME ===
+[oauth/guest/token/grant] Response(raw): b'{"refresh_expiry_time": 1785377834, "expiry_time": 1784081834, "uid": 4700657485, "open_id": "c976b1c204561bfd38d5c466913b28f4", "access_token": "b47781c56f0265768448a4ce15e1fd3f686834458c46b7ee2acb5be6c4596435", "main_active_platform": 4, "expires_in": 1296000, "token_type": "Bearer", "platform": 4, "create_time": 1782785834, "scope": ["get_user_info", "get_friends", "payment", "send_request"], "refresh_token": "426e1586a992c6f3aee0346a5e762b0ef54d933618011470a1fbe201c05f61ef"}' 
+
+[MajorLogin] Response(raw): b'<html><body><h1>503 Service Unavailable</h1>\nNo server is available to handle this request.\n</body></html>\n' 
+
+[MajorLogin] Error: <html><body><h1>503 Service Unavailable</h1>
+No server is available to handle this request.
+</body></html>
+
+Major login failed

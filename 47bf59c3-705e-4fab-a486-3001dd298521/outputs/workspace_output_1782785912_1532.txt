@@ -1,0 +1,9 @@
+loginbp.ggpolarbear.com: 202.81.97.160
+loginbp.ggblueshark.com: 202.81.97.162
+loginind.freefiremobile.com: DNS FAILED
+loginbd.freefiremobile.com: DNS FAILED
+loginpk.freefiremobile.com: DNS FAILED
+
+JWT API with PK credentials: Status=401
+Response: {"error":"Invalid UID or Password","success":false}
+

@@ -1,0 +1,11 @@
+client.pk.freefiremobile.com: ERROR - [Errno -2] Name or service not known
+clientbp.pk.freefiremobile.com: ERROR - [Errno -2] Name or service not known
+clientpk.freefiremobile.com: ERROR - [Errno -2] Name or service not known
+client-pk.freefiremobile.com: ERROR - [Errno -2] Name or service not known
+clientme.freefiremobile.com: ERROR - [Errno -2] Name or service not known
+client.me.freefiremobile.com: ERROR - [Errno -2] Name or service not known
+clientbpme.freefiremobile.com: ERROR - [Errno -2] Name or service not known
+clientbp.ggpolarbear.com: Status=401, Response=signature is invalid
+
+client.ind.freefiremobile.com: Status=400, Response=NF_CLAN_CLAN_NOT_FOUND
+

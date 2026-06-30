@@ -1,0 +1,1 @@
+/tmp/FreeFire-Api/Configuration/AccountConfiguration.json

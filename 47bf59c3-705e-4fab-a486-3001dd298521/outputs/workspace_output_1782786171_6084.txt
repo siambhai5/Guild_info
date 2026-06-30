@@ -1,0 +1,23 @@
+{
+  "account_id": 14630591364,
+  "nickname": "eyBwbNu524HjjIbn3Ia4hNPngA==",
+  "noti_region": "IND",
+  "lock_region": "IND",
+  "external_id": "1d6edb6d9e28e1c38b586dbc8082999b",
+  "external_type": 4,
+  "plat_id": 1,
+  "client_version": "1.120.2",
+  "emulator_score": 100,
+  "is_emulator": true,
+  "country_code": "US",
+  "external_uid": 4471767672,
+  "reg_avatar": 102000007,
+  "source": 0,
+  "lock_region_time": 1770142764,
+  "client_type": 2,
+  "signature_md5": "7428b253defc164018c604a1ebbfebdf",
+  "using_version": 1,
+  "release_channel": "android",
+  "release_version": "OB54",
+  "exp": 1782814975
+}

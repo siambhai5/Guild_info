@@ -1,0 +1,24 @@
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:app:Requesting JWT for UID: 4471767672, Password: SEXTY_MODS_IND_REOPRZXEW
+DEBUG:httpcore.connection:connect_tcp.started host='ff-ob54-jwt-api.vercel.app' port=443 local_address=None timeout=20.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fac49133910>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x7fac49128f80> server_hostname='ff-ob54-jwt-api.vercel.app' timeout=20.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fac4ae6d750>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Age', b'0'), (b'Cache-Control', b'public, max-age=0, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Type', b'application/json'), (b'Date', b'Tue, 30 Jun 2026 02:15:23 GMT'), (b'Server', b'Vercel'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-Vercel-Cache', b'MISS'), (b'X-Vercel-Id', b'pdx1::iad1::rmmml-1782785718613-9da8c3875d40'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: GET https://ff-ob54-jwt-api.vercel.app/guest_to_jwt?uid=4471767672&password=SEXTY_MODS_IND_REOPRZXEW "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:app:API Response Status Code: 200
+DEBUG:app:API Response JSON: {'OWNER': 'XEROX_MOD', 'TG': 'https://t.me/XEROX_LIKES', 'access_token': '31c028507f3a5d5123fb3dc41bc7c0b353f9182fc86dbf94c9a9820c0ce73796', 'account_uid': '14630591364', 'jwt_token': 'eyJhbGciOiJIUzI1NiIsInN2ciI6IjMiLCJ0eXAiOiJKV1QifQ.eyJhY2NvdW50X2lkIjoxNDYzMDU5MTM2NCwibmlja25hbWUiOiJleUJ3Yk51NTI0SGpqSWJuM0lhNGhOUG5nQT09Iiwibm90aV9yZWdpb24iOiJJTkQiLCJsb2NrX3JlZ2lvbiI6IklORCIsImV4dGVybmFsX2lkIjoiMWQ2ZWRiNmQ5ZTI4ZTFjMzhiNTg2ZGJjODA4Mjk5OWIiLCJleHRlcm5hbF90eXBlIjo0LCJwbGF0X2lkIjoxLCJjbGllbnRfdmVyc2lvbiI6IjEuMTIwLjIiLCJlbXVsYXRvcl9zY29yZSI6MTAwLCJpc19lbXVsYXRvciI6dHJ1ZSwiY291bnRyeV9jb2RlIjoiVVMiLCJleHRlcm5hbF91aWQiOjQ0NzE3Njc2NzIsInJlZ19hdmF0YXIiOjEwMjAwMDAwNywic291cmNlIjowLCJsb2NrX3JlZ2lvbl90aW1lIjoxNzcwMTQyNzY0LCJjbGllbnRfdHlwZSI6Miwic2lnbmF0dXJlX21kNSI6Ijc0MjhiMjUzZGVmYzE2NDAxOGM2MDRhMWViYmZlYmRmIiwidXNpbmdfdmVyc2lvbiI6MSwicmVsZWFzZV9jaGFubmVsIjoiYW5kcm9pZCIsInJlbGVhc2VfdmVyc2lvbiI6Ik9CNTQiLCJleHAiOjE3ODI4MTQ1MjN9.9221ac1dSPjUIAcTJ9kGtf93_f1fCdIUmuHphDYj8ZI', 'platform_type_used': 4, 'region': 'IND', 'success': True, 'uid': '4471767672'}
+DEBUG:app:JWT Token retrieved successfully for UID: 4471767672
+INFO:app:[OK] JWT READY PK
+Token for PK: Bearer eyJhbGciOiJIUzI1NiIsInN2ciI6IjMiLCJ0eXAiOiJKV1QifQ.eyJhY2NvdW50X2lkIjoxNDYzMDU5MTM2NCwibmlja25hbWUiOiJleUJ3Yk51NTI0SGpqSWJuM0lhNGhOUG5nQT09Iiwibm90aV9yZWdpb24iOiJJTkQiLCJsb2NrX3JlZ2lvbiI6IklORCIsImV4dGVybmFsX2lkIjoiMWQ2ZWRiNmQ5ZTI4ZTFjMzhiNTg2ZGJjODA4Mjk5OWIiLCJleHRlcm5hbF90eXBlIjo0LCJwbGF0X2lkIjoxLCJjbGllbnRfdmVyc2lvbiI6IjEuMTIwLjIiLCJlbXVsYXRvcl9zY29yZSI6MTAwLCJpc19lbXVsYXRvciI6dHJ1ZSwiY291bnRyeV9jb2RlIjoiVVMiLCJleHRlcm5hbF91aWQiOjQ0NzE3Njc2NzIsInJlZ19hdmF0YXIiOjEwMjAwMDAwNywic291cmNlIjowLCJsb2NrX3JlZ2lvbl90aW1lIjoxNzcwMTQyNzY0LCJjbGllbnRfdHlwZSI6Miwic2lnbmF0dXJlX21kNSI6Ijc0MjhiMjUzZGVmYzE2NDAxOGM2MDRhMWViYmZlYmRmIiwidXNpbmdfdmVyc2lvbiI6MSwicmVsZWFzZV9jaGFubmVsIjoiYW5kcm9pZCIsInJlbGVhc2VfdmVyc2lvbiI6Ik9CNTQiLCJleHAiOjE3ODI4MTQ1MjN9.9221ac1dSPjUIAcTJ9kGtf93_f1fCdIUmuHphDYj8ZI

@@ -1,0 +1,9 @@
+PK Auth: ['refresh_expiry_time', 'expiry_time', 'uid', 'open_id', 'access_token', 'main_active_platform', 'expires_in', 'token_type', 'platform', 'create_time', 'scope', 'refresh_token']
+
+https://loginbp.ggpolarbear.com/MajorLogin: Status=400, Content-Length=29
+Response: BR_PLATFORM_INVALID_PLATFORM
+
+
+https://loginbp.ggblueshark.com/MajorLogin: Status=400, Content-Length=29
+Response: BR_PLATFORM_INVALID_PLATFORM
+

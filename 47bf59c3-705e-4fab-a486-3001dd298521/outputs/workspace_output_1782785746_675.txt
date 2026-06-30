@@ -1,0 +1,11 @@
+Protobuf bytes: 089be2acc60b1001
+Encrypted payload: 6597fd93af7a6489d66a473fa451b599
+
+=== PK original ===
+URL: https://clientbp.ggpolarbear.com/GetClanInfoByClanID
+Status: 401
+Content length: 21
+Response text: signature is invalid
+
+
+=== PK alt === ERROR: [Errno -2] Name or service not known

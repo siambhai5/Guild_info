@@ -1,0 +1,22 @@
+{
+    "Api Owner": "XEROX_MOD",
+    "TG_CHANNEL": "https://t.me/XEROX_LIKES",
+    "balance": 550100,
+    "clan_id": 3100324123,
+    "clan_name": "M\u028f_P\u0280\u026a\u1d0d\u1d07\u32db\ufe0e",
+    "created_at": "2026-06-27 10:57:19",
+    "guild_details_clan_id": 0,
+    "guild_details_members_online": 0,
+    "guild_details_region": "",
+    "guild_details_total_members": 0,
+    "last_active": "2026-06-28 15:48:47",
+    "level": 1,
+    "region": "PK",
+    "requested_region": "PK",
+    "score": 0,
+    "status": "success",
+    "updated_at": "1970-01-01 00:00:00",
+    "upgrades": 10,
+    "welcome_message": "Come on What'sapp!!!!!",
+    "xp": 202627
+}

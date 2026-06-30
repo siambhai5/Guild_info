@@ -1,0 +1,32 @@
+JWT API Status: 200
+JWT API Response keys: ['OWNER', 'TG', 'access_token', 'account_uid', 'jwt_token', 'platform_type_used', 'region', 'success', 'uid']
+Has jwt_token: True
+Has access_token: True
+
+IND server - Status: 200
+Raw response hex: 08afd1da1c12104d47e385a4494e444941e385a4efa3bf188df8ead30520c795a605280730373830403248016212596f757475626520536168696e20486572656a03494e44722b7b2274616773223a205b342c20352c20312c20365d2c2022657874656e6465645f74696d6573223a20337d7a205b3437303732333636312c3836343036363438352c323533353230373037365d8001c8d8fa039001ae81f0a9069801f885fca906a0018e8c03b00113b801e4ccbeb605880211a002fcfcb20ca8028eee02b00207
+Protobuf parsed successfully
+  id: 60205231
+  special_code: MGㅤINDIAㅤ
+  timestamp1: 1517992973
+  value_a: 11111111
+  status_code: 7
+  sub_type: 55
+  version: 48
+  level: 50
+  flags: 1
+  welcome_message: Youtube Sahin Here
+  region: IND
+  json_metadata: {"tags": [4, 5, 1, 6], "extended_times": 3}
+  big_numbers: [470723661,864066485,2535207076]
+  balance: 50702
+  score: 19
+  upgrades: 17
+  total_playtime: 26001020
+  energy: 46862
+  rank: 7
+  xp: 202627
+  timestamp2: 1781427442
+  error_code: 1005
+  last_active: 1782095780
+  guild_details: 

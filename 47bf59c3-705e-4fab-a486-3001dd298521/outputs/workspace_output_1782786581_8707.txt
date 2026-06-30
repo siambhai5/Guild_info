@@ -1,0 +1,19 @@
+{
+    "jwt_regions_available": {
+        "IND": "ready",
+        "ME": "ready"
+    },
+    "query_regions": {
+        "BD": "ready",
+        "BR": "ready",
+        "IND": "ready",
+        "ME": "ready",
+        "NA": "ready",
+        "PK": "ready",
+        "SAC": "ready",
+        "SG": "ready",
+        "US": "ready"
+    },
+    "status": "running",
+    "timestamp": "2026-06-30T02:29:41.808980"
+}

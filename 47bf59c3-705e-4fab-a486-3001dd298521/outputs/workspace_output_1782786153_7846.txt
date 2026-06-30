@@ -1,0 +1,14 @@
+[oauth/guest/token/grant] Response(raw): b'{"refresh_expiry_time": 1785378155, "expiry_time": 1784082155, "uid": 4700657512, "open_id": "6c3bc845eb10ab8405c74bb9c8b702e2", "access_token": "9a4668cdca60b48d7442ea0c1c1fb0a6cb27bfb8261d3eb7a7f9cf6a555e3478", "main_active_platform": 4, "expires_in": 1296000, "token_type": "Bearer", "platform": 4, "create_time": 1782786155, "scope": ["get_user_info", "get_friends", "payment", "send_request"], "refresh_token": "9e3df4ca0c82e11380db4f6a872fb2af61180e61cd7a8c90bc0ce022d666ace8"}' 
+
+=== Garena OAuth ===
+access_token: 9a4668cdca60b48d7442ea0c1c1fb0a6cb27bfb8261d3eb7a7f9cf6a555e3478
+open_id: 6c3bc845eb10ab8405c74bb9c8b702e2
+[MajorLogin] Response(raw): b'<html><body><h1>503 Service Unavailable</h1>\nNo server is available to handle this request.\n</body></html>\n' 
+
+[MajorLogin] Error: <html><body><h1>503 Service Unavailable</h1>
+No server is available to handle this request.
+</body></html>
+
+
+=== MajorLogin ===
+Result: False

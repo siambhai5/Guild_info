@@ -1,0 +1,5 @@
+IND credentials => JWT region: IND
+SG credentials => JWT region: NA
+PK credentials => JWT region: IND
+ME credentials => JWT region: ME
+BD credentials => JWT region: NA

@@ -1,0 +1,286 @@
+ * Serving Flask app 'app'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.21.66.148:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:__main__:Requesting JWT for UID: 4700643647
+DEBUG:httpcore.connection:connect_tcp.started host='ff-ob54-jwt-api.vercel.app' port=443 local_address=None timeout=20.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f491c7e4610>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x7f491c759c70> server_hostname='ff-ob54-jwt-api.vercel.app' timeout=20.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f491dc4ebd0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'GET']>
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:__main__:Requesting JWT for UID: 4700643647
+DEBUG:httpcore.connection:connect_tcp.started host='ff-ob54-jwt-api.vercel.app' port=443 local_address=None timeout=20.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f491c603410>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x7f491c75b770> server_hostname='ff-ob54-jwt-api.vercel.app' timeout=20.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f491c603750>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Age', b'0'), (b'Cache-Control', b'public, max-age=0, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Type', b'application/json'), (b'Date', b'Tue, 30 Jun 2026 02:29:20 GMT'), (b'Server', b'Vercel'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-Vercel-Cache', b'MISS'), (b'X-Vercel-Id', b'pdx1::iad1::chb5r-1782786555703-bdea67aff3d4'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: GET https://ff-ob54-jwt-api.vercel.app/guest_to_jwt?uid=4700643647&password=43DFF0D51E2257E8C340E49930C9EC0A1FEA034664CD8065FF0DE3BD62975006 "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:__main__:API Response Status Code: 200
+DEBUG:__main__:API Response JSON keys: ['OWNER', 'TG', 'access_token', 'account_uid', 'jwt_token', 'platform_type_used', 'region', 'success', 'uid']
+DEBUG:__main__:JWT Token retrieved successfully for UID: 4700643647
+INFO:__main__:[OK] JWT READY for ME
+DEBUG:httpcore.connection:connect_tcp.started host='clientbp.ggpolarbear.com' port=443 local_address=None timeout=20.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491c808fd0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x7f491c759c70> server_hostname='clientbp.ggpolarbear.com' timeout=20.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491db01050>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Accept-Encoding'), (b'date', b'Tue, 30 Jun 2026 02:29:20 GMT'), (b'content-length', b'142'), (b'content-type', b'application/octet-stream')])
+INFO:httpx:HTTP Request: POST https://clientbp.ggpolarbear.com/GetClanInfoByClanID "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2026 02:29:20] "GET /info2?clan_id=3100324123&region=PK HTTP/1.1" 200 -
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Age', b'0'), (b'Cache-Control', b'public, max-age=0, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Type', b'application/json'), (b'Date', b'Tue, 30 Jun 2026 02:29:23 GMT'), (b'Server', b'Vercel'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-Vercel-Cache', b'MISS'), (b'X-Vercel-Id', b'pdx1::iad1::pn2rz-1782786558997-15dde8bd1fa4'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: GET https://ff-ob54-jwt-api.vercel.app/guest_to_jwt?uid=4700643647&password=43DFF0D51E2257E8C340E49930C9EC0A1FEA034664CD8065FF0DE3BD62975006 "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:__main__:API Response Status Code: 200
+DEBUG:__main__:API Response JSON keys: ['OWNER', 'TG', 'access_token', 'account_uid', 'jwt_token', 'platform_type_used', 'region', 'success', 'uid']
+DEBUG:__main__:JWT Token retrieved successfully for UID: 4700643647
+INFO:__main__:[OK] JWT READY for ME
+DEBUG:httpcore.connection:connect_tcp.started host='clientbp.ggpolarbear.com' port=443 local_address=None timeout=20.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491d1ce050>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x7f491c75a720> server_hostname='clientbp.ggpolarbear.com' timeout=20.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491d1ce150>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Accept-Encoding'), (b'date', b'Tue, 30 Jun 2026 02:29:23 GMT'), (b'content-length', b'142'), (b'content-type', b'application/octet-stream')])
+INFO:httpx:HTTP Request: POST https://clientbp.ggpolarbear.com/GetClanInfoByClanID "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2026 02:29:23] "GET /info2?clan_id=3100324123&region=PK HTTP/1.1" 200 -
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:httpcore.connection:connect_tcp.started host='clientbp.ggpolarbear.com' port=443 local_address=None timeout=20.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491c619910>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x7f491c75bbf0> server_hostname='clientbp.ggpolarbear.com' timeout=20.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491c618d10>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Accept-Encoding'), (b'date', b'Tue, 30 Jun 2026 02:29:24 GMT'), (b'content-length', b'142'), (b'content-type', b'application/octet-stream')])
+INFO:httpx:HTTP Request: POST https://clientbp.ggpolarbear.com/GetClanInfoByClanID "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2026 02:29:24] "GET /info2?clan_id=3100324123&region=PK HTTP/1.1" 200 -
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:httpcore.connection:connect_tcp.started host='clientbp.ggpolarbear.com' port=443 local_address=None timeout=20.0 socket_options=None
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:httpcore.connection:connect_tcp.started host='clientbp.ggpolarbear.com' port=443 local_address=None timeout=20.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491c61a650>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x7f491c759fd0> server_hostname='clientbp.ggpolarbear.com' timeout=20.0
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491c6166d0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x7f491c75a0f0> server_hostname='clientbp.ggpolarbear.com' timeout=20.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491c61a290>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491c616690>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Accept-Encoding'), (b'date', b'Tue, 30 Jun 2026 02:29:29 GMT'), (b'content-length', b'142'), (b'content-type', b'application/octet-stream')])
+INFO:httpx:HTTP Request: POST https://clientbp.ggpolarbear.com/GetClanInfoByClanID "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2026 02:29:29] "GET /info?clan_id=3100324123&region=PK HTTP/1.1" 200 -
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Accept-Encoding'), (b'date', b'Tue, 30 Jun 2026 02:29:29 GMT'), (b'content-length', b'142'), (b'content-type', b'application/octet-stream')])
+INFO:httpx:HTTP Request: POST https://clientbp.ggpolarbear.com/GetClanInfoByClanID "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2026 02:29:29] "GET /info?clan_id=3100324123&region=PK HTTP/1.1" 200 -
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:__main__:Requesting JWT for UID: 4471767672
+DEBUG:httpcore.connection:connect_tcp.started host='ff-ob54-jwt-api.vercel.app' port=443 local_address=None timeout=20.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f491c614650>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x7f491c75b020> server_hostname='ff-ob54-jwt-api.vercel.app' timeout=20.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f491d1da590>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'GET']>
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:__main__:Requesting JWT for UID: 4471767672
+DEBUG:httpcore.connection:connect_tcp.started host='ff-ob54-jwt-api.vercel.app' port=443 local_address=None timeout=20.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f491eba3f90>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x7f491c75a0f0> server_hostname='ff-ob54-jwt-api.vercel.app' timeout=20.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f491ee442d0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Age', b'0'), (b'Cache-Control', b'public, max-age=0, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Type', b'application/json'), (b'Date', b'Tue, 30 Jun 2026 02:29:37 GMT'), (b'Server', b'Vercel'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-Vercel-Cache', b'MISS'), (b'X-Vercel-Id', b'pdx1::iad1::77zcq-1782786573129-104351d40a8c'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: GET https://ff-ob54-jwt-api.vercel.app/guest_to_jwt?uid=4471767672&password=SEXTY_MODS_IND_REOPRZXEW "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:__main__:API Response Status Code: 200
+DEBUG:__main__:API Response JSON keys: ['OWNER', 'TG', 'access_token', 'account_uid', 'jwt_token', 'platform_type_used', 'region', 'success', 'uid']
+DEBUG:__main__:JWT Token retrieved successfully for UID: 4471767672
+INFO:__main__:[OK] JWT READY for IND
+DEBUG:httpcore.connection:connect_tcp.started host='client.ind.freefiremobile.com' port=443 local_address=None timeout=20.0 socket_options=None
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Age', b'0'), (b'Cache-Control', b'public, max-age=0, must-revalidate'), (b'Content-Encoding', b'gzip'), (b'Content-Type', b'application/json'), (b'Date', b'Tue, 30 Jun 2026 02:29:37 GMT'), (b'Server', b'Vercel'), (b'Strict-Transport-Security', b'max-age=63072000; includeSubDomains; preload'), (b'X-Vercel-Cache', b'MISS'), (b'X-Vercel-Id', b'pdx1::iad1::kkpjd-1782786573262-d2586aad32c3'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: GET https://ff-ob54-jwt-api.vercel.app/guest_to_jwt?uid=4471767672&password=SEXTY_MODS_IND_REOPRZXEW "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:__main__:API Response Status Code: 200
+DEBUG:__main__:API Response JSON keys: ['OWNER', 'TG', 'access_token', 'account_uid', 'jwt_token', 'platform_type_used', 'region', 'success', 'uid']
+DEBUG:__main__:JWT Token retrieved successfully for UID: 4471767672
+INFO:__main__:[OK] JWT READY for IND
+DEBUG:httpcore.connection:connect_tcp.started host='client.ind.freefiremobile.com' port=443 local_address=None timeout=20.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491c6193d0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x7f491c75bf50> server_hostname='client.ind.freefiremobile.com' timeout=20.0
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491c619290>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x7f491c75bb60> server_hostname='client.ind.freefiremobile.com' timeout=20.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491eae44d0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491c619bd0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Accept-Encoding'), (b'date', b'Tue, 30 Jun 2026 02:29:38 GMT'), (b'content-length', b'238'), (b'content-type', b'application/octet-stream')])
+INFO:httpx:HTTP Request: POST https://client.ind.freefiremobile.com/GetClanInfoByClanID "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2026 02:29:38] "GET /info2?clan_id=60205231&region=IND HTTP/1.1" 200 -
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Accept-Encoding'), (b'date', b'Tue, 30 Jun 2026 02:29:38 GMT'), (b'content-length', b'238'), (b'content-type', b'application/octet-stream')])
+INFO:httpx:HTTP Request: POST https://client.ind.freefiremobile.com/GetClanInfoByClanID "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2026 02:29:38] "GET /info2?clan_id=60205231&region=IND HTTP/1.1" 200 -
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:httpcore.connection:connect_tcp.started host='client.ind.freefiremobile.com' port=443 local_address=None timeout=20.0 socket_options=None
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2026 02:29:41] "GET /health HTTP/1.1" 200 -
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491c7a6d10>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x7f491c759fd0> server_hostname='client.ind.freefiremobile.com' timeout=20.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491c6145d0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Accept-Encoding'), (b'date', b'Tue, 30 Jun 2026 02:29:42 GMT'), (b'content-length', b'238'), (b'content-type', b'application/octet-stream')])
+INFO:httpx:HTTP Request: POST https://client.ind.freefiremobile.com/GetClanInfoByClanID "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2026 02:29:42] "GET /info2?clan_id=60205231&region=IND HTTP/1.1" 200 -
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:httpcore.connection:connect_tcp.started host='clientbp.ggpolarbear.com' port=443 local_address=None timeout=20.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491c601190>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x7f491c75a8d0> server_hostname='clientbp.ggpolarbear.com' timeout=20.0
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:httpcore.connection:connect_tcp.started host='clientbp.ggpolarbear.com' port=443 local_address=None timeout=20.0 socket_options=None
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491c603110>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491c628790>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x7f491c75bda0> server_hostname='clientbp.ggpolarbear.com' timeout=20.0
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Accept-Encoding'), (b'date', b'Tue, 30 Jun 2026 02:29:46 GMT'), (b'content-length', b'142'), (b'content-type', b'application/octet-stream')])
+INFO:httpx:HTTP Request: POST https://clientbp.ggpolarbear.com/GetClanInfoByClanID "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2026 02:29:46] "GET /info?clan_id=3100324123&region=PK HTTP/1.1" 200 -
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f491e059150>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Accept-Encoding'), (b'date', b'Tue, 30 Jun 2026 02:29:46 GMT'), (b'content-length', b'142'), (b'content-type', b'application/octet-stream')])
+INFO:httpx:HTTP Request: POST https://clientbp.ggpolarbear.com/GetClanInfoByClanID "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+INFO:werkzeug:127.0.0.1 - - [30/Jun/2026 02:29:46] "GET /info2?clan_id=3100324123&region=PK HTTP/1.1" 200 -

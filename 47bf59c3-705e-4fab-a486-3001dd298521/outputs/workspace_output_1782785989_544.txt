@@ -1,0 +1,4 @@
+No auth: Status=401, Response=missing Authorization header
+
+Empty auth: Status=401, Response=Authorization header must be Bearer {token}
+

@@ -1,0 +1,2 @@
+Garena OAuth Status: 200
+Garena OAuth Response: {"refresh_expiry_time": 1785378146, "expiry_time": 1784082146, "uid": 4700643671, "open_id": "68c39391f3b7f14aa8971a170aa4ba1b", "access_token": "0f7629cd0d62eccd628f0aa4457b0857da5220870809a5ae8b7223e9609d61a6", "main_active_platform": 4, "expires_in": 1296000, "token_type": "Bearer", "platform": 4, "create_time": 1782786146, "scope": ["get_user_info", "get_friends", "payment", "send_request"], "refresh_token": "319acb7a838394ebf95f25a27e65ebc1153433760a4cf4f63fe0e61c657bc432"}

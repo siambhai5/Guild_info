@@ -1,0 +1,8 @@
+JWT Region: ME
+JWT lock_region: ME, noti_region: ME
+
+Trying clientbp.ggpolarbear.com with ME JWT...
+Status: 200
+Parse error: MessageToDict() got an unexpected keyword argument 'including_default_value_fields'
+Raw content length: 142
+Raw hex: 089be2acc60b12154dca8f5f50ca80c9aae1b48de1b487e38b9befb88e188fd9fed10620fd929bab3c28013014380148026216436f6d65206f6e2057686174277361707021212121216a02504b72147b2274616773223a205b332c20362c2031325d7d7a025b5da001d4c92188020ab00201b80283af0cc802e907e002df8485d206e80201fa02008a0300a20300

@@ -1,0 +1,7 @@
+BD clan (3048889605) on ggpolarbear: Status=401
+  Response: signature is invalid
+
+
+PK clan (3100324123) on ggpolarbear: Status=401
+  Response: signature is invalid
+
